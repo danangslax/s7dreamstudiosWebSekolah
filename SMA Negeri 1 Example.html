@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)# -->
+<html lang="id" class="scroll-smooth tone-monochrome"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="fL3z6eEu6Jv6tcMBlXHb5VUrQZdvbvRayu9Dd0oM">
+
+    
+    <title>SMA Negeri 1 Example</title>
+    <meta name="description" content="Website resmi SMA Negeri 1 Pringsurat. Informasi PPDB, berita, prestasi, dan profil sekolah.">
+    <meta name="keywords" content="sman 1 pringsurat, sma pringsurat, ppdb temanggung, sekolah temanggung">
+
+    
+                <link rel="icon" href="#media/branding/EH0itMuWMJglYbaEAeCLpAN9pUGjy8E2vVrTlzFF.png">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SMA Negeri 1 Pringsurat — Website Resmi — SMA Negeri 1 Example">
+    <meta property="og:description" content="Website resmi SMA Negeri 1 Pringsurat. Informasi PPDB, berita, prestasi, dan profil sekolah.">
+    <meta property="og:url" content="http://localhost:8000">
+
+    
+    
+    <script type="module" src="./SMA Negeri 1 Example_files/client"></script><link rel="stylesheet" href="./SMA Negeri 1 Example_files/app.css"><script type="module" src="./SMA Negeri 1 Example_files/app.js.download"></script>
+    
+    <link rel="stylesheet" href="./SMA Negeri 1 Example_files/swiper-bundle.min.css">
+
+    
+    <style>
+    /* ==================================================================
+       SCROLL REVEAL
+       ================================================================== */
+    [data-reveal] {
+        opacity: 0;
+        will-change: opacity, transform;
+        transition:
+            opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+            transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    [data-reveal="fade-up"]    { transform: translateY(28px); }
+    [data-reveal="fade-down"]  { transform: translateY(-28px); }
+    [data-reveal="fade-left"]  { transform: translateX(-32px); }
+    [data-reveal="fade-right"] { transform: translateX(32px); }
+    [data-reveal="fade"]       { transform: none; }
+    [data-reveal="zoom"]       { transform: scale(0.96); }
+
+    [data-reveal].is-revealed {
+        opacity: 1;
+        transform: none;
+    }
+
+    [data-reveal][data-delay="100"] { transition-delay: 100ms; }
+    [data-reveal][data-delay="200"] { transition-delay: 200ms; }
+    [data-reveal][data-delay="300"] { transition-delay: 300ms; }
+    [data-reveal][data-delay="400"] { transition-delay: 400ms; }
+    [data-reveal][data-delay="500"] { transition-delay: 500ms; }
+
+    /* ==================================================================
+       HERO ENTRANCE
+       ================================================================== */
+    @keyframes heroEnterUp {
+        from { opacity: 0; transform: translateY(24px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes heroEnterFade {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    @keyframes heroEnterScale {
+        from { opacity: 0; transform: scale(1.04); }
+        to   { opacity: 1; transform: scale(1); }
+    }
+
+    .hero-enter        { animation: heroEnterUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    .hero-enter-fade   { animation: heroEnterFade 1s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    .hero-enter-scale  { animation: heroEnterScale 1.2s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+    .hero-enter-delay-1 { animation-delay: 0.15s; }
+    .hero-enter-delay-2 { animation-delay: 0.30s; }
+    .hero-enter-delay-3 { animation-delay: 0.45s; }
+    .hero-enter-delay-4 { animation-delay: 0.60s; }
+    .hero-enter-delay-5 { animation-delay: 0.75s; }
+
+    /* ==================================================================
+       ACCESSIBILITY
+       ================================================================== */
+    @media (prefers-reduced-motion: reduce) {
+        [data-reveal],
+        .hero-enter,
+        .hero-enter-fade,
+        .hero-enter-scale {
+            transition: none !important;
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+        }
+    }
+</style>
+</head>
+<body class="flex min-h-screen flex-col bg-white text-black antialiased">
+
+    
+    <header x-data="{ open: false, scrolled: false }" @scroll.window="scrolled = window.scrollY &gt; 20" :class="scrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur'" class="sticky top-0 z-50 border-b border-neutral-200 transition-all duration-200 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 sm:px-8 lg:h-20 lg:px-12">
+
+        
+        <a href="#" class="flex flex-shrink-0 items-center gap-3">
+                            <img src="./SMA Negeri 1 Example_files/so1aPq8OTpvo7xqRn5uQpiZSfuQZrBLF8eIAcW4j.png" alt="SMA Negeri 1 Example" class="h-9 w-auto object-contain lg:h-10">
+            
+            <div class="hidden sm:block">
+                <p class="text-sm font-bold leading-tight text-black lg:text-base">
+                    SMA Negeri 1 Example
+                </p>
+                <p class="text-[10px] uppercase leading-tight tracking-wider text-neutral-500">
+                    Unggul dalam Prestasi, Mulia dalam Akhlak
+                </p>
+            </div>
+        </a>
+
+        
+        <nav class="hidden items-center gap-0.5 lg:flex">
+            
+                
+                                    
+                    
+                    <a href="#" class="relative px-3 py-2 text-sm font-medium transition
+                              text-black">
+                        Beranda
+
+                        
+                                                    <span class="absolute inset-x-3 bottom-0 h-0.5 bg-black"></span>
+                                            </a>
+                
+                
+                
+            
+                
+                
+                
+                                    
+                    <div class="relative" x-data="{ dropdown: false }" @mouseenter="dropdown = true" @mouseleave="dropdown = false">
+                        <button type="button" class="relative flex items-center gap-1 px-3 py-2 text-sm font-medium transition
+                                   text-neutral-600 hover:text-black">
+                            Profil
+                            <svg :class="dropdown ? 'rotate-180' : ''" class="h-3.5 w-3.5 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+</svg>
+                            
+                                                    </button>
+
+                        
+                        <div x-show="dropdown" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-0 top-full z-20 pt-2" style="display: none;">
+                            <div class="min-w-[220px] overflow-hidden border border-neutral-200 bg-white py-1.5 shadow-xl">
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Tentang Kami</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Sejarah</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Visi &amp; Misi</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Kepala Sekolah</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Guru &amp; Staff</span>
+
+                                                                            </a>
+                                                            </div>
+                        </div>
+                    </div>
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="relative px-3 py-2 text-sm font-medium transition
+                              text-neutral-600 hover:text-black">
+                        Berita
+
+                        
+                                            </a>
+                
+                
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="relative px-3 py-2 text-sm font-medium transition
+                              text-neutral-600 hover:text-black">
+                        Pengumuman
+
+                        
+                                            </a>
+                
+                
+                
+            
+                
+                
+                
+                                    
+                    <div class="relative" x-data="{ dropdown: false }" @mouseenter="dropdown = true" @mouseleave="dropdown = false">
+                        <button type="button" class="relative flex items-center gap-1 px-3 py-2 text-sm font-medium transition
+                                   text-neutral-600 hover:text-black">
+                            Akademik
+                            <svg :class="dropdown ? 'rotate-180' : ''" class="h-3.5 w-3.5 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+</svg>
+                            
+                                                    </button>
+
+                        
+                        <div x-show="dropdown" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-0 top-full z-20 pt-2" style="display: none;">
+                            <div class="min-w-[220px] overflow-hidden border border-neutral-200 bg-white py-1.5 shadow-xl">
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Program</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Kurikulum</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Ekstrakurikuler</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Prestasi</span>
+
+                                                                            </a>
+                                                            </div>
+                        </div>
+                    </div>
+                
+            
+                
+                
+                
+                                    
+                    <div class="relative" x-data="{ dropdown: false }" @mouseenter="dropdown = true" @mouseleave="dropdown = false">
+                        <button type="button" class="relative flex items-center gap-1 px-3 py-2 text-sm font-medium transition
+                                   text-neutral-600 hover:text-black">
+                            Fasilitas
+                            <svg :class="dropdown ? 'rotate-180' : ''" class="h-3.5 w-3.5 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+</svg>
+                            
+                                                    </button>
+
+                        
+                        <div x-show="dropdown" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-0 top-full z-20 pt-2" style="display: none;">
+                            <div class="min-w-[220px] overflow-hidden border border-neutral-200 bg-white py-1.5 shadow-xl">
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Fasilitas</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Galeri</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Layanan</span>
+
+                                                                            </a>
+                                                                    
+                                    <a href="#" class="group flex items-center justify-between px-4 py-2.5 text-sm transition
+                                              text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                        <span>Transparansi</span>
+
+                                                                            </a>
+                                                            </div>
+                        </div>
+                    </div>
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="relative px-3 py-2 text-sm font-medium transition
+                              text-neutral-600 hover:text-black">
+                        Download
+
+                        
+                                            </a>
+                
+                
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="relative px-3 py-2 text-sm font-medium transition
+                              text-neutral-600 hover:text-black">
+                        PPDB
+
+                        
+                                            </a>
+                
+                
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="relative px-3 py-2 text-sm font-medium transition
+                              text-neutral-600 hover:text-black">
+                        Kontak
+
+                        
+                                            </a>
+                
+                
+                
+                    </nav>
+
+        
+        <div class="flex flex-shrink-0 items-center gap-2">
+
+            
+                            <a href="#" class="hidden items-center gap-1.5 bg-black px-4 py-2 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-neutral-800 lg:inline-flex">
+                    <svg class="h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"></path>
+</svg>                    Dashboard
+                </a>
+            
+            
+            <button type="button" @click="open = !open" class="p-2 text-black transition hover:bg-neutral-100 lg:hidden" aria-label="Toggle menu">
+                <svg x-show="!open" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+</svg>                <svg x-show="open" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" style="display: none;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+</svg>            </button>
+        </div>
+    </div>
+
+    
+    <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-2" class="border-t border-neutral-200 bg-white lg:hidden" style="display: none;">
+        <nav class="space-y-0.5 px-6 py-4">
+
+            
+                
+                                    
+                    
+                    <a href="#" class="block border-l-2 px-4 py-3 text-sm font-medium transition
+                              border-black bg-neutral-50 text-black">
+                        Beranda
+                    </a>
+                
+                
+                
+            
+                
+                
+                
+                                    
+                    <div x-data="{ expanded: false }">
+                        <button type="button" @click="expanded = !expanded" class="flex w-full items-center justify-between border-l-2 px-4 py-3 text-sm font-medium transition
+                                   border-transparent text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50">
+                            <span>Profil</span>
+                            <svg :class="expanded ? 'rotate-180' : ''" class="h-4 w-4 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+</svg>                        </button>
+
+                        <div x-show="expanded" x-collapse="" class="ml-4 space-y-0.5 border-l border-neutral-200 pl-3" style="display: none; height: 0px; overflow: hidden;" hidden="">
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Tentang Kami
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Sejarah
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Visi &amp; Misi
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Kepala Sekolah
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Guru &amp; Staff
+                                </a>
+                                                    </div>
+                    </div>
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="block border-l-2 px-4 py-3 text-sm font-medium transition
+                              border-transparent text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50">
+                        Berita
+                    </a>
+                
+                
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="block border-l-2 px-4 py-3 text-sm font-medium transition
+                              border-transparent text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50">
+                        Pengumuman
+                    </a>
+                
+                
+                
+            
+                
+                
+                
+                                    
+                    <div x-data="{ expanded: false }">
+                        <button type="button" @click="expanded = !expanded" class="flex w-full items-center justify-between border-l-2 px-4 py-3 text-sm font-medium transition
+                                   border-transparent text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50">
+                            <span>Akademik</span>
+                            <svg :class="expanded ? 'rotate-180' : ''" class="h-4 w-4 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+</svg>                        </button>
+
+                        <div x-show="expanded" x-collapse="" class="ml-4 space-y-0.5 border-l border-neutral-200 pl-3" style="display: none; height: 0px; overflow: hidden;" hidden="">
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Program
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Kurikulum
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Ekstrakurikuler
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Prestasi
+                                </a>
+                                                    </div>
+                    </div>
+                
+            
+                
+                
+                
+                                    
+                    <div x-data="{ expanded: false }">
+                        <button type="button" @click="expanded = !expanded" class="flex w-full items-center justify-between border-l-2 px-4 py-3 text-sm font-medium transition
+                                   border-transparent text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50">
+                            <span>Fasilitas</span>
+                            <svg :class="expanded ? 'rotate-180' : ''" class="h-4 w-4 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+</svg>                        </button>
+
+                        <div x-show="expanded" x-collapse="" class="ml-4 space-y-0.5 border-l border-neutral-200 pl-3" style="display: none; height: 0px; overflow: hidden;" hidden="">
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Fasilitas
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Galeri
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Layanan
+                                </a>
+                                                            
+                                <a href="#" class="block px-3 py-2.5 text-sm transition
+                                          text-neutral-600 hover:bg-neutral-50 hover:text-black">
+                                    Transparansi
+                                </a>
+                                                    </div>
+                    </div>
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="block border-l-2 px-4 py-3 text-sm font-medium transition
+                              border-transparent text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50">
+                        Download
+                    </a>
+                
+                
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="block border-l-2 px-4 py-3 text-sm font-medium transition
+                              border-transparent text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50">
+                        PPDB
+                    </a>
+                
+                
+                
+            
+                
+                                    
+                    
+                    <a href="#" class="block border-l-2 px-4 py-3 text-sm font-medium transition
+                              border-transparent text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50">
+                        Kontak
+                    </a>
+                
+                
+                
+            
+            
+                            <div class="mt-4 border-t border-neutral-200 pt-4">
+                    <a href="#" class="flex items-center justify-center gap-2 bg-black px-4 py-3 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-neutral-800">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"></path>
+</svg>                        Dashboard
+                    </a>
+                </div>
+                    </nav>
+    </div>
+</header>
+    
+    <main class="flex-1">
+        
+    
+    <section class="hero-strada relative overflow-hidden border-b border-neutral-800 bg-black">
+
+        <div class="swiper hero-strada-swiper h-[75vh] min-h-[540px] w-full swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
+            <div class="swiper-wrapper" id="swiper-wrapper-ceb339dbce526236" aria-live="off" style="transition-duration: 0ms; transition-delay: 0ms;">
+
+                                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="1 / 3" style="width: 1351px; opacity: 0; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;" data-swiper-slide-index="0">
+                        <div class="relative h-full w-full">
+
+                            
+                            <img src="./SMA Negeri 1 Example_files/SIl7t8HgDa98mTKmFsnoBEdxEjHB9cUAAvurVoOT.jpg" alt="Hero 1 — SMA Negeri 1 Example" class="h-full w-full object-cover grayscale">
+
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30"></div>
+
+                            
+                            <div class="absolute inset-0 flex items-center">
+                                <div class="mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12">
+                                    <div class="max-w-2xl">
+
+                                        
+                                        <div class="mb-5 flex items-center gap-3">
+                                            <span class="h-px w-10 bg-white"></span>
+                                            <span class="text-xs font-bold uppercase tracking-[0.25em] text-neutral-300">
+                                                Website Resmi Sekolah
+                                            </span>
+                                        </div>
+
+                                        
+                                        <h1 class="text-4xl font-black leading-[0.95] tracking-tighter text-white sm:text-5xl lg:text-7xl">
+                                            Mencetak
+                                            Generasi
+                                            <span class="relative inline-block">
+                                                <span class="relative z-10">Unggul</span>
+                                                <span class="absolute inset-x-0 bottom-1 z-0 h-4 bg-white/20"></span>
+                                            </span>
+                                            <br>Berkarakter.
+                                        </h1>
+
+                                        
+                                        <p class="mt-6 max-w-lg text-base leading-relaxed text-neutral-300">
+                                            SMA Negeri 1 Example adalah sekolah menengah atas unggulan yang berdiri sejak tahun 1985. Berfokus pada pembentukan karakter, inklusivitas, dan prestasi akademik, sekolah ini terus bertransformasi menuju era digital untuk mencetak generasi muda yang inovatif, berdaya saing global, serta berintegritas tinggi.
+                                        </p>
+
+                                        
+                                        <div class="mt-8 flex flex-wrap gap-3">
+                                            <a href="#" class="group inline-flex items-center gap-2 bg-white px-8 py-4 text-sm font-bold uppercase tracking-wider text-black transition hover:bg-neutral-200">
+                                                Jelajahi Profil
+                                                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                                            </a>
+
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="absolute left-6 top-8 sm:left-8 lg:left-12">
+                                <div class="flex items-center gap-3">
+                                    <span class="grid h-9 w-9 place-items-center border border-white/30 bg-black/30 backdrop-blur-sm">
+                                        <span class="text-[10px] font-black text-white">
+                                            01
+                                        </span>
+                                    </span>
+                                    <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-400">
+                                        SMA Negeri 1 Example
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                                    <div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 3" style="width: 1351px; opacity: 0; transform: translate3d(-1351px, 0px, 0px); transition-duration: 0ms;" data-swiper-slide-index="1">
+                        <div class="relative h-full w-full">
+
+                            
+                            <img src="./SMA Negeri 1 Example_files/LoErodhyVpq2AVFeWsxxpdP4bDZsqJ2CoIT53STa.jpg" alt="Hero 2 — SMA Negeri 1 Example" class="h-full w-full object-cover grayscale">
+
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30"></div>
+
+                            
+                            <div class="absolute inset-0 flex items-center">
+                                <div class="mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12">
+                                    <div class="max-w-2xl">
+
+                                        
+                                        <div class="mb-5 flex items-center gap-3">
+                                            <span class="h-px w-10 bg-white"></span>
+                                            <span class="text-xs font-bold uppercase tracking-[0.25em] text-neutral-300">
+                                                Website Resmi Sekolah
+                                            </span>
+                                        </div>
+
+                                        
+                                        <h1 class="text-4xl font-black leading-[0.95] tracking-tighter text-white sm:text-5xl lg:text-7xl">
+                                            Mencetak
+                                            Generasi
+                                            <span class="relative inline-block">
+                                                <span class="relative z-10">Unggul</span>
+                                                <span class="absolute inset-x-0 bottom-1 z-0 h-4 bg-white/20"></span>
+                                            </span>
+                                            <br>Berkarakter.
+                                        </h1>
+
+                                        
+                                        <p class="mt-6 max-w-lg text-base leading-relaxed text-neutral-300">
+                                            SMA Negeri 1 Example adalah sekolah menengah atas unggulan yang berdiri sejak tahun 1985. Berfokus pada pembentukan karakter, inklusivitas, dan prestasi akademik, sekolah ini terus bertransformasi menuju era digital untuk mencetak generasi muda yang inovatif, berdaya saing global, serta berintegritas tinggi.
+                                        </p>
+
+                                        
+                                        <div class="mt-8 flex flex-wrap gap-3">
+                                            <a href="#" class="group inline-flex items-center gap-2 bg-white px-8 py-4 text-sm font-bold uppercase tracking-wider text-black transition hover:bg-neutral-200">
+                                                Jelajahi Profil
+                                                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                                            </a>
+
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="absolute left-6 top-8 sm:left-8 lg:left-12">
+                                <div class="flex items-center gap-3">
+                                    <span class="grid h-9 w-9 place-items-center border border-white/30 bg-black/30 backdrop-blur-sm">
+                                        <span class="text-[10px] font-black text-white">
+                                            02
+                                        </span>
+                                    </span>
+                                    <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-400">
+                                        SMA Negeri 1 Example
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                                    <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="3 / 3" style="width: 1351px; opacity: 1; transform: translate3d(-2702px, 0px, 0px); transition-duration: 0ms;" data-swiper-slide-index="2">
+                        <div class="relative h-full w-full">
+
+                            
+                            <img src="./SMA Negeri 1 Example_files/XfTzMKtMqknqyauq3lxDlNdqYqSiadqyr6iMEXfn.jpg" alt="Hero 3 — SMA Negeri 1 Example" class="h-full w-full object-cover grayscale">
+
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30"></div>
+
+                            
+                            <div class="absolute inset-0 flex items-center">
+                                <div class="mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12">
+                                    <div class="max-w-2xl">
+
+                                        
+                                        <div class="mb-5 flex items-center gap-3">
+                                            <span class="h-px w-10 bg-white"></span>
+                                            <span class="text-xs font-bold uppercase tracking-[0.25em] text-neutral-300">
+                                                Website Resmi Sekolah
+                                            </span>
+                                        </div>
+
+                                        
+                                        <h1 class="text-4xl font-black leading-[0.95] tracking-tighter text-white sm:text-5xl lg:text-7xl">
+                                            Mencetak
+                                            Generasi
+                                            <span class="relative inline-block">
+                                                <span class="relative z-10">Unggul</span>
+                                                <span class="absolute inset-x-0 bottom-1 z-0 h-4 bg-white/20"></span>
+                                            </span>
+                                            <br>Berkarakter.
+                                        </h1>
+
+                                        
+                                        <p class="mt-6 max-w-lg text-base leading-relaxed text-neutral-300">
+                                            SMA Negeri 1 Example adalah sekolah menengah atas unggulan yang berdiri sejak tahun 1985. Berfokus pada pembentukan karakter, inklusivitas, dan prestasi akademik, sekolah ini terus bertransformasi menuju era digital untuk mencetak generasi muda yang inovatif, berdaya saing global, serta berintegritas tinggi.
+                                        </p>
+
+                                        
+                                        <div class="mt-8 flex flex-wrap gap-3">
+                                            <a href="#" class="group inline-flex items-center gap-2 bg-white px-8 py-4 text-sm font-bold uppercase tracking-wider text-black transition hover:bg-neutral-200">
+                                                Jelajahi Profil
+                                                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                                            </a>
+
+                                                                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="absolute left-6 top-8 sm:left-8 lg:left-12">
+                                <div class="flex items-center gap-3">
+                                    <span class="grid h-9 w-9 place-items-center border border-white/30 bg-black/30 backdrop-blur-sm">
+                                        <span class="text-[10px] font-black text-white">
+                                            03
+                                        </span>
+                                    </span>
+                                    <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-400">
+                                        SMA Negeri 1 Example
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                            <div class="swiper-button-prev !h-12 !w-12 !border !border-white/30 !bg-black/30 !text-white backdrop-blur-sm transition hover:!bg-white hover:!text-black" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ceb339dbce526236"></div>
+                <div class="swiper-button-next !h-12 !w-12 !border !border-white/30 !bg-black/30 !text-white backdrop-blur-sm transition hover:!bg-white hover:!text-black" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ceb339dbce526236"></div>
+            
+            
+                            <div class="swiper-pagination !bottom-8 swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">3</span> / <span class="swiper-pagination-total">3</span></div>
+            
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+        
+                    <div class="pointer-events-none absolute bottom-8 right-6 z-10 hidden items-center gap-3 sm:right-12 lg:flex">
+                <span class="font-mono text-xs font-bold tracking-widest text-white">
+                    <span class="hero-strada-current text-2xl">03</span>
+                    <span class="mx-1 text-neutral-500">/</span>
+                    <span class="text-neutral-400">03</span>
+                </span>
+            </div>
+        
+        
+        <div class="pointer-events-none absolute bottom-8 left-6 z-10 hidden items-center gap-3 sm:left-12 lg:flex">
+            <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-400">
+                Scroll
+            </span>
+            <span class="relative h-px w-10 overflow-hidden bg-neutral-600">
+                <span class="absolute inset-y-0 left-0 w-3 animate-pulse bg-white"></span>
+            </span>
+        </div>
+
+    </section>
+
+    
+
+    
+    <div data-reveal="fade-up" class="is-revealed">
+        <section class="border-b border-neutral-200 bg-white">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="grid grid-cols-2 divide-x divide-y divide-neutral-200 border-x border-b border-neutral-200 sm:divide-y-0 lg:grid-cols-4">
+
+            
+                <div data-reveal="fade-up" data-delay="0" class="group px-6 py-12 text-center transition hover:bg-neutral-50 lg:py-16 is-revealed">
+                    
+                    <p class="text-4xl font-black leading-none tracking-tight text-black lg:text-6xl">
+                        875
+                        <span class="text-neutral-300 transition group-hover:text-black">+</span>
+                    </p>
+
+                    
+                    <p class="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-black">
+                        Siswa Aktif
+                    </p>
+
+                    
+                    <p class="mt-1 text-[11px] uppercase tracking-wider text-neutral-400">
+                        Terdaftar aktif
+                    </p>
+
+                    
+                    <span class="mx-auto mt-4 block h-px w-8 bg-neutral-300 transition-all duration-300 group-hover:w-16 group-hover:bg-black"></span>
+                </div>
+
+            
+                <div data-reveal="fade-up" data-delay="100" class="group px-6 py-12 text-center transition hover:bg-neutral-50 lg:py-16 is-revealed">
+                    
+                    <p class="text-4xl font-black leading-none tracking-tight text-black lg:text-6xl">
+                        52
+                        <span class="text-neutral-300 transition group-hover:text-black">+</span>
+                    </p>
+
+                    
+                    <p class="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-black">
+                        Guru &amp; Staff
+                    </p>
+
+                    
+                    <p class="mt-1 text-[11px] uppercase tracking-wider text-neutral-400">
+                        Tenaga pendidik
+                    </p>
+
+                    
+                    <span class="mx-auto mt-4 block h-px w-8 bg-neutral-300 transition-all duration-300 group-hover:w-16 group-hover:bg-black"></span>
+                </div>
+
+            
+                <div data-reveal="fade-up" data-delay="200" class="group px-6 py-12 text-center transition hover:bg-neutral-50 lg:py-16 is-revealed">
+                    
+                    <p class="text-4xl font-black leading-none tracking-tight text-black lg:text-6xl">
+                        18
+                        <span class="text-neutral-300 transition group-hover:text-black">+</span>
+                    </p>
+
+                    
+                    <p class="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-black">
+                        Ekstrakurikuler
+                    </p>
+
+                    
+                    <p class="mt-1 text-[11px] uppercase tracking-wider text-neutral-400">
+                        Kegiatan aktif
+                    </p>
+
+                    
+                    <span class="mx-auto mt-4 block h-px w-8 bg-neutral-300 transition-all duration-300 group-hover:w-16 group-hover:bg-black"></span>
+                </div>
+
+            
+                <div data-reveal="fade-up" data-delay="300" class="group px-6 py-12 text-center transition hover:bg-neutral-50 lg:py-16 is-revealed">
+                    
+                    <p class="text-4xl font-black leading-none tracking-tight text-black lg:text-6xl">
+                        145
+                        <span class="text-neutral-300 transition group-hover:text-black">+</span>
+                    </p>
+
+                    
+                    <p class="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-black">
+                        Prestasi
+                    </p>
+
+                    
+                    <p class="mt-1 text-[11px] uppercase tracking-wider text-neutral-400">
+                        Total diraih
+                    </p>
+
+                    
+                    <span class="mx-auto mt-4 block h-px w-8 bg-neutral-300 transition-all duration-300 group-hover:w-16 group-hover:bg-black"></span>
+                </div>
+
+                    </div>
+    </div>
+</section>    </div>
+
+    
+    <div data-reveal="fade-up" class="is-revealed">
+        <section class="border-b border-neutral-200 bg-white py-20 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+
+            
+            <div class="lg:col-span-5">
+                <div class="relative">
+
+                    
+                    <img src="./SMA Negeri 1 Example_files/5LOPsZSybkj1IHYejGEdyGDU5hAyBLdRuNm6n2xg.jpg" alt="Dra. Siti Nurhaliza, M.Pd." class="aspect-[4/5] w-full object-cover">
+
+                    
+                    <div class="absolute -bottom-4 -right-4 h-24 w-24 border-b-2 border-r-2 border-black"></div>
+
+                    
+                    <div class="absolute -left-4 -top-4 h-24 w-24 border-l-2 border-t-2 border-black"></div>
+
+                    
+                                            <div class="absolute bottom-6 left-6 bg-black px-4 py-2">
+                            <p class="text-[10px] font-medium uppercase tracking-widest text-neutral-400">
+                                Menjabat
+                            </p>
+                            <p class="mt-0.5 text-sm font-bold text-white">
+                                2020 - sekarang
+                            </p>
+                        </div>
+                                    </div>
+            </div>
+
+            
+            <div class="flex flex-col justify-center lg:col-span-7">
+
+                
+                <span class="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+                    Sambutan Kepala Sekolah
+                </span>
+
+                
+                <h2 class="mb-8 text-3xl font-bold leading-tight tracking-tight text-black lg:text-4xl">
+                    "Membangun Generasi Masa Depan dengan Pendidikan Berkualitas"
+                </h2>
+
+                
+                <div class="relative mb-8 pl-8">
+                    <span class="absolute left-0 top-0 text-6xl font-black leading-none text-neutral-200">“</span>
+                    <p class="text-base leading-relaxed text-neutral-600">
+                        Assalamu’alaikum Warahmatullahi Wabarakatuh,Salam Sejahtera untuk Kita Semua,Om Swastiastu, Namo Buddhaya, Salam Kebajikan.Selamat datang di situs resmi SMA Negeri 1 Example.Sebagai institusi pendidikan, kami berkomitmen untuk menghadirkan lingkungan belajar yang kondusif, inovatif, dan berintegrasi, guna membimbing setiap siswa-siswi mencapai potensi terbaik mereka. Kami percaya bahwa pendidikan...
+                    </p>
+                </div>
+
+                
+                <div class="flex flex-wrap items-center gap-4 border-t border-neutral-200 pt-8">
+
+                    
+                    <div>
+                        <p class="text-base font-bold text-black">
+                            Dra. Siti Nurhaliza, M.Pd.
+                        </p>
+                        <p class="mt-0.5 text-xs uppercase tracking-wider text-neutral-500">
+                                                            NIP. 197005151995032002
+                                                    </p>
+                    </div>
+
+                    
+                    <a href="#" class="group ml-auto inline-flex items-center gap-2 text-sm font-semibold text-black transition hover:gap-3">
+                        Selengkapnya
+                        <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </a>
+                </div>
+
+                
+                                    <div class="mt-6 flex items-center gap-2 text-xs text-neutral-500">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"></path>
+</svg>                        <span>S2 Magister Manajemen Pendidikan</span>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+    
+    <div data-reveal="fade-up" class="is-revealed">
+        <section class="border-b border-neutral-200 bg-neutral-50 py-20 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+
+        
+        <div class="mb-16 flex flex-col gap-6 border-b border-neutral-200 pb-8 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+                <span class="mb-3 block text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+                    01 / Program
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight text-black lg:text-5xl">
+                    Program Unggulan
+                </h2>
+                <p class="mt-4 max-w-xl text-sm leading-relaxed text-neutral-600">
+                    Berbagai program berkualitas untuk mengembangkan potensi siswa secara menyeluruh.
+                </p>
+            </div>
+            <a href="#" class="group inline-flex items-center gap-2 text-sm font-semibold text-black transition hover:gap-3">
+                Lihat Semua
+                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+
+        
+        <div class="grid grid-cols-1 gap-px bg-neutral-200 sm:grid-cols-2 lg:grid-cols-4">
+
+                            <a href="#" class="group relative flex flex-col bg-white p-8 transition duration-300 hover:bg-black">
+
+                    
+                    <span class="mb-6 text-5xl font-black leading-none tracking-tighter text-neutral-200 transition duration-300 group-hover:text-white/30">
+                        01
+                    </span>
+
+                    
+                                            <span class="mb-6 grid h-12 w-12 place-items-center border border-neutral-300 text-neutral-700 transition duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"></path>
+</svg>                        </span>
+                    
+                    
+                                            <span class="mb-3 text-[10px] font-bold uppercase tracking-widest text-neutral-500 transition duration-300 group-hover:text-neutral-400">
+                            Akademik
+                        </span>
+                    
+                    
+                    <h3 class="mb-3 text-lg font-bold leading-tight text-black transition duration-300 group-hover:text-white">
+                        Program MIPA
+                    </h3>
+
+                    
+                    <p class="mb-6 line-clamp-3 text-sm leading-relaxed text-neutral-500 transition duration-300 group-hover:text-neutral-300">
+                        Program peminatan Matematika dan Ilmu Pengetahuan Alam untuk siswa yang berminat mendalami sains dan...
+                    </p>
+
+                    
+                    <span class="mt-auto inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-black transition duration-300 group-hover:text-white">
+                        Baca Selengkapnya
+                        <svg class="h-3 w-3 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </span>
+                </a>
+                            <a href="#" class="group relative flex flex-col bg-white p-8 transition duration-300 hover:bg-black">
+
+                    
+                    <span class="mb-6 text-5xl font-black leading-none tracking-tighter text-neutral-200 transition duration-300 group-hover:text-white/30">
+                        02
+                    </span>
+
+                    
+                                            <span class="mb-6 grid h-12 w-12 place-items-center border border-neutral-300 text-neutral-700 transition duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path>
+</svg>                        </span>
+                    
+                    
+                                            <span class="mb-3 text-[10px] font-bold uppercase tracking-widest text-neutral-500 transition duration-300 group-hover:text-neutral-400">
+                            Akademik
+                        </span>
+                    
+                    
+                    <h3 class="mb-3 text-lg font-bold leading-tight text-black transition duration-300 group-hover:text-white">
+                        Program IPS
+                    </h3>
+
+                    
+                    <p class="mb-6 line-clamp-3 text-sm leading-relaxed text-neutral-500 transition duration-300 group-hover:text-neutral-300">
+                        Program peminatan Ilmu Pengetahuan Sosial untuk siswa yang tertarik pada bidang ekonomi, sejarah, da...
+                    </p>
+
+                    
+                    <span class="mt-auto inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-black transition duration-300 group-hover:text-white">
+                        Baca Selengkapnya
+                        <svg class="h-3 w-3 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </span>
+                </a>
+                            <a href="#" class="group relative flex flex-col bg-white p-8 transition duration-300 hover:bg-black">
+
+                    
+                    <span class="mb-6 text-5xl font-black leading-none tracking-tighter text-neutral-200 transition duration-300 group-hover:text-white/30">
+                        03
+                    </span>
+
+                    
+                                            <span class="mb-6 grid h-12 w-12 place-items-center border border-neutral-300 text-neutral-700 transition duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"></path>
+</svg>                        </span>
+                    
+                    
+                                            <span class="mb-3 text-[10px] font-bold uppercase tracking-widest text-neutral-500 transition duration-300 group-hover:text-neutral-400">
+                            Akademik
+                        </span>
+                    
+                    
+                    <h3 class="mb-3 text-lg font-bold leading-tight text-black transition duration-300 group-hover:text-white">
+                        Program Bahasa
+                    </h3>
+
+                    
+                    <p class="mb-6 line-clamp-3 text-sm leading-relaxed text-neutral-500 transition duration-300 group-hover:text-neutral-300">
+                        Program peminatan Bahasa untuk siswa yang ingin mendalami bahasa asing dan budaya internasional.
+                    </p>
+
+                    
+                    <span class="mt-auto inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-black transition duration-300 group-hover:text-white">
+                        Baca Selengkapnya
+                        <svg class="h-3 w-3 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </span>
+                </a>
+                            <a href="#" class="group relative flex flex-col bg-white p-8 transition duration-300 hover:bg-black">
+
+                    
+                    <span class="mb-6 text-5xl font-black leading-none tracking-tighter text-neutral-200 transition duration-300 group-hover:text-white/30">
+                        04
+                    </span>
+
+                    
+                                            <span class="mb-6 grid h-12 w-12 place-items-center border border-neutral-300 text-neutral-700 transition duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"></path>
+</svg>                        </span>
+                    
+                    
+                                            <span class="mb-3 text-[10px] font-bold uppercase tracking-widest text-neutral-500 transition duration-300 group-hover:text-neutral-400">
+                            Akademik
+                        </span>
+                    
+                    
+                    <h3 class="mb-3 text-lg font-bold leading-tight text-black transition duration-300 group-hover:text-white">
+                        Bimbingan Olimpiade
+                    </h3>
+
+                    
+                    <p class="mb-6 line-clamp-3 text-sm leading-relaxed text-neutral-500 transition duration-300 group-hover:text-neutral-300">
+                        Program pembinaan intensif untuk persiapan olimpiade sains tingkat kabupaten, provinsi, dan nasional...
+                    </p>
+
+                    
+                    <span class="mt-auto inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-black transition duration-300 group-hover:text-white">
+                        Baca Selengkapnya
+                        <svg class="h-3 w-3 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </span>
+                </a>
+                    </div>
+
+        
+        <div class="mt-12 text-center">
+            <a href="#" class="inline-flex items-center gap-2 border-b-2 border-black pb-1 text-sm font-semibold text-black transition hover:gap-3">
+                Lihat Semua Program
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+    </div>
+</section>
+    </div>
+
+    
+    <div data-reveal="fade-up" class="is-revealed">
+        <section class="border-b border-neutral-200 bg-white py-20 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+
+        
+        <div class="mb-16 flex flex-col gap-6 border-b border-neutral-200 pb-8 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+                <span class="mb-3 block text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+                    02 / Berita
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight text-black lg:text-5xl">
+                    Berita Terbaru
+                </h2>
+                <p class="mt-4 max-w-xl text-sm leading-relaxed text-neutral-600">
+                    Informasi terkini seputar kegiatan, prestasi, dan agenda sekolah.
+                </p>
+            </div>
+            <a href="#" class="group inline-flex items-center gap-2 text-sm font-semibold text-black transition hover:gap-3">
+                Semua Berita
+                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+
+        
+                <a href="#" class="group mb-16 grid grid-cols-1 gap-8 border-b border-neutral-200 pb-16 lg:grid-cols-2 lg:gap-12">
+
+            
+            <div class="relative overflow-hidden bg-neutral-100">
+                                    <img src="./SMA Negeri 1 Example_files/Mwg2oSoNNennndXaak5mE8iXV87Vlaxnm5B5BARv.jpg" alt="Siswa SMA Negeri 1 Example Ukir Prestasi Gemilang di Tingkat Nasional" class="aspect-[4/3] w-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0">
+                
+                
+                <span class="absolute left-4 top-4 bg-black px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+                    Featured
+                </span>
+            </div>
+
+            
+            <div class="flex flex-col justify-center">
+
+                
+                <div class="mb-4 flex items-center gap-3 text-xs uppercase tracking-wider text-neutral-500">
+                    <span class="font-semibold text-black">Prestasi</span>
+                    <span class="h-px w-8 bg-neutral-300"></span>
+                    <time>22 Sep 2026</time>
+                </div>
+
+                
+                <h3 class="mb-4 text-3xl font-bold leading-tight tracking-tight text-black transition group-hover:underline lg:text-4xl">
+                    Siswa SMA Negeri 1 Example Ukir Prestasi Gemilang di Tingkat Nasional
+                </h3>
+
+                
+                <p class="mb-6 line-clamp-3 text-base leading-relaxed text-neutral-600">
+                    Siswa SMA Negeri 1 Example berhasil meraih penghargaan bergengsi dalam kompetisi akademik tingkat nasional berkat kerja keras, bimbingan intensif dewan guru, serta program pengayaa...
+                </p>
+
+                
+                <div class="flex flex-wrap items-center gap-6 border-t border-neutral-200 pt-6 text-sm">
+                    <span class="inline-flex items-center gap-2 text-neutral-500">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"></path>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+</svg>                        51 views
+                    </span>
+
+                    <span class="inline-flex items-center gap-2 font-semibold text-black">
+                        Baca Selengkapnya
+                        <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </span>
+                </div>
+            </div>
+        </a>
+
+        
+                    <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+                
+                                    <a href="#" class="group flex flex-col">
+
+                        
+                        <div class="mb-5 overflow-hidden bg-neutral-100">
+                                                            <img src="./SMA Negeri 1 Example_files/rO1nhMuk6CJ7RiSv7ilZIbdApoZ9DpJq8scmjWDe.jpg" alt="Semarak Peringatan HUT Ke-81 RI di SMA Negeri 1 Example: Mempererat Kebersamaan dan Semangat Nasionalisme" class="aspect-[4/3] w-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0">
+                                                    </div>
+
+                        
+                        <div class="mb-3 flex items-center gap-3 text-xs uppercase tracking-wider text-neutral-500">
+                            <span class="font-semibold text-black">Kegiatan Sekolah</span>
+                            <span class="h-px w-6 bg-neutral-300"></span>
+                            <time>21 Sep 2026</time>
+                        </div>
+
+                        
+                        <h3 class="mb-2 line-clamp-2 text-lg font-bold leading-tight text-black transition group-hover:underline">
+                            Semarak Peringatan HUT Ke-81 RI di SMA Negeri 1 Example: Mempererat Kebersamaan dan Semangat Nasionalisme
+                        </h3>
+
+                        
+                        <p class="mb-4 line-clamp-2 text-sm leading-relaxed text-neutral-500">
+                            Semarak Peringatan HUT Ke-81 RI di SMA Negeri 1 Example: Mempererat Kebersamaan dan Semangat Nasiona...
+                        </p>
+
+                        
+                        <span class="mt-auto inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-black">
+                            Baca
+                            <svg class="h-3 w-3 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                        </span>
+                    </a>
+                                    <a href="#" class="group flex flex-col">
+
+                        
+                        <div class="mb-5 overflow-hidden bg-neutral-100">
+                                                            <img src="./SMA Negeri 1 Example_files/KINkAv02rU2LhcESmGMODpXw0grs90wfTNr6tnLQ.jpg" alt="SMA Negeri 1 Example Gelar Sosialisasi PPDB Tahun Ajaran 2026/2027: Wujudkan Proses Seleksi yang Transparan dan Akuntabel" class="aspect-[4/3] w-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0">
+                                                    </div>
+
+                        
+                        <div class="mb-3 flex items-center gap-3 text-xs uppercase tracking-wider text-neutral-500">
+                            <span class="font-semibold text-black">Pengumuman</span>
+                            <span class="h-px w-6 bg-neutral-300"></span>
+                            <time>20 Sep 2026</time>
+                        </div>
+
+                        
+                        <h3 class="mb-2 line-clamp-2 text-lg font-bold leading-tight text-black transition group-hover:underline">
+                            SMA Negeri 1 Example Gelar Sosialisasi PPDB Tahun Ajaran 2026/2027: Wujudkan Proses Seleksi yang Transparan dan Akuntabel
+                        </h3>
+
+                        
+                        <p class="mb-4 line-clamp-2 text-sm leading-relaxed text-neutral-500">
+                            SMA Negeri 1 Example Gelar Sosialisasi PPDB Tahun Ajaran 2026/2027: Wujudkan Proses Seleksi yang Tra...
+                        </p>
+
+                        
+                        <span class="mt-auto inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-black">
+                            Baca
+                            <svg class="h-3 w-3 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                        </span>
+                    </a>
+                            </div>
+        
+        
+        <div class="mt-12 text-center lg:hidden">
+            <a href="#" class="inline-flex items-center gap-2 border-b-2 border-black pb-1 text-sm font-semibold text-black transition hover:gap-3">
+                Lihat Semua Berita
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+    </div>
+</section>
+    </div>
+
+    
+    <div data-reveal="fade-up" class="is-revealed">
+        <section class="border-b border-neutral-800 bg-black py-20 text-white lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+
+        
+        <div class="mb-16 flex flex-col gap-6 border-b border-white/10 pb-8 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+                <span class="mb-3 block text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">
+                    03 / Prestasi
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight text-white lg:text-5xl">
+                    Prestasi Terbaru
+                </h2>
+                <p class="mt-4 max-w-xl text-sm leading-relaxed text-neutral-400">
+                    Kebanggaan siswa-siswi kami di berbagai kompetisi tingkat regional, nasional, dan internasional.
+                </p>
+            </div>
+            <a href="#" class="group inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:gap-3">
+                Semua Prestasi
+                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+
+        
+        <div class="grid grid-cols-1 gap-px bg-white/10 md:grid-cols-2 lg:grid-cols-3">
+                            <a href="#" class="group flex flex-col bg-black p-8 transition hover:bg-neutral-900">
+
+                    
+                    <div class="mb-6 flex items-start justify-between">
+                        <span class="text-5xl font-black leading-none tracking-tighter text-white/20 transition group-hover:text-white/40">
+                            01
+                        </span>
+
+                        <span class="flex h-12 w-12 items-center justify-center border border-white/20 text-white transition group-hover:border-white group-hover:bg-white group-hover:text-black">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"></path>
+</svg>                        </span>
+                    </div>
+
+                    
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        <span class="border border-white/30 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+                            Nasional
+                        </span>
+                        <span class="border border-white/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-neutral-400">
+                            akademik
+                        </span>
+                    </div>
+
+                    
+                    <h3 class="mb-4 line-clamp-3 text-xl font-bold leading-tight text-white transition group-hover:underline">
+                        Juara 1 Olimpiade Sains Nasional Bidang Matematika
+                    </h3>
+
+                    
+                                            <div class="mb-6 space-y-2 border-l-2 border-white/20 pl-4">
+                                                            <p class="flex items-center gap-2 text-sm text-neutral-300">
+                                    <svg class="h-4 w-4 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+</svg>                                    <span class="truncate">Ahmad Rizki Pratama</span>
+                                </p>
+                            
+                                                            <p class="flex items-center gap-2 text-sm text-neutral-400">
+                                    <svg class="h-4 w-4 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"></path>
+</svg>                                    <span class="truncate">Budi Santoso, S.Pd.</span>
+                                </p>
+                                                    </div>
+                    
+                    
+                    <div class="mt-auto flex items-center justify-between border-t border-white/10 pt-4">
+                        <time class="text-xs uppercase tracking-wider text-neutral-500">
+                            22 September 2026
+                        </time>
+
+                        <svg class="h-4 w-4 text-white transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </div>
+                </a>
+                            <a href="#" class="group flex flex-col bg-black p-8 transition hover:bg-neutral-900">
+
+                    
+                    <div class="mb-6 flex items-start justify-between">
+                        <span class="text-5xl font-black leading-none tracking-tighter text-white/20 transition group-hover:text-white/40">
+                            02
+                        </span>
+
+                        <span class="flex h-12 w-12 items-center justify-center border border-white/20 text-white transition group-hover:border-white group-hover:bg-white group-hover:text-black">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"></path>
+</svg>                        </span>
+                    </div>
+
+                    
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        <span class="border border-white/30 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+                            Provinsi
+                        </span>
+                        <span class="border border-white/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-neutral-400">
+                            akademik
+                        </span>
+                    </div>
+
+                    
+                    <h3 class="mb-4 line-clamp-3 text-xl font-bold leading-tight text-white transition group-hover:underline">
+                        Juara 2 Lomba Cerdas Cermat Tingkat Provinsi
+                    </h3>
+
+                    
+                                            <div class="mb-6 space-y-2 border-l-2 border-white/20 pl-4">
+                                                            <p class="flex items-center gap-2 text-sm text-neutral-300">
+                                    <svg class="h-4 w-4 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+</svg>                                    <span class="truncate">Siti Nurhaliza</span>
+                                </p>
+                            
+                                                            <p class="flex items-center gap-2 text-sm text-neutral-400">
+                                    <svg class="h-4 w-4 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"></path>
+</svg>                                    <span class="truncate">Dra. Rina Wulandari, M.Pd.</span>
+                                </p>
+                                                    </div>
+                    
+                    
+                    <div class="mt-auto flex items-center justify-between border-t border-white/10 pt-4">
+                        <time class="text-xs uppercase tracking-wider text-neutral-500">
+                            15 September 2026
+                        </time>
+
+                        <svg class="h-4 w-4 text-white transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </div>
+                </a>
+                            <a href="#" class="group flex flex-col bg-black p-8 transition hover:bg-neutral-900">
+
+                    
+                    <div class="mb-6 flex items-start justify-between">
+                        <span class="text-5xl font-black leading-none tracking-tighter text-white/20 transition group-hover:text-white/40">
+                            03
+                        </span>
+
+                        <span class="flex h-12 w-12 items-center justify-center border border-white/20 text-white transition group-hover:border-white group-hover:bg-white group-hover:text-black">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"></path>
+</svg>                        </span>
+                    </div>
+
+                    
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        <span class="border border-white/30 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+                            Kabupaten
+                        </span>
+                        <span class="border border-white/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-neutral-400">
+                            olahraga
+                        </span>
+                    </div>
+
+                    
+                    <h3 class="mb-4 line-clamp-3 text-xl font-bold leading-tight text-white transition group-hover:underline">
+                        Juara 1 Lomba Basket Antar SMA Tingkat Kabupaten
+                    </h3>
+
+                    
+                                            <div class="mb-6 space-y-2 border-l-2 border-white/20 pl-4">
+                                                            <p class="flex items-center gap-2 text-sm text-neutral-300">
+                                    <svg class="h-4 w-4 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+</svg>                                    <span class="truncate">Tim Basket SMAN 1 Pringsurat</span>
+                                </p>
+                            
+                                                            <p class="flex items-center gap-2 text-sm text-neutral-400">
+                                    <svg class="h-4 w-4 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"></path>
+</svg>                                    <span class="truncate">Eko Prasetyo, S.Pd.</span>
+                                </p>
+                                                    </div>
+                    
+                    
+                    <div class="mt-auto flex items-center justify-between border-t border-white/10 pt-4">
+                        <time class="text-xs uppercase tracking-wider text-neutral-500">
+                            08 September 2026
+                        </time>
+
+                        <svg class="h-4 w-4 text-white transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </div>
+                </a>
+                    </div>
+
+        
+        <div class="mt-16 flex flex-col items-center justify-center gap-4 border-t border-white/10 pt-12 text-center">
+            <p class="text-sm text-neutral-400">
+                Lihat semua pencapaian siswa-siswi kami
+            </p>
+            <a href="#" class="group inline-flex items-center gap-2 bg-white px-8 py-4 text-sm font-bold uppercase tracking-wider text-black transition hover:bg-neutral-200">
+                Jelajahi Semua Prestasi
+                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+    </div>
+</section>
+    </div>
+
+    
+    <div data-reveal="fade-up" class="is-revealed">
+        <section class="border-b border-neutral-200 bg-white py-20 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+
+        
+        <div class="mb-16 flex flex-col gap-6 border-b border-neutral-200 pb-8 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+                <span class="mb-3 block text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+                    04 / Ekstrakurikuler
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight text-black lg:text-5xl">
+                    Kegiatan Ekstrakurikuler
+                </h2>
+                <p class="mt-4 max-w-xl text-sm leading-relaxed text-neutral-600">
+                    Kembangkan bakat dan minat melalui berbagai kegiatan di luar jam pelajaran.
+                </p>
+            </div>
+            <a href="#" class="group inline-flex items-center gap-2 text-sm font-semibold text-black transition hover:gap-3">
+                Lihat Semua
+                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+
+        
+        <div class="divide-y divide-neutral-200 border-y border-neutral-200">
+
+                            <a href="#" class="group grid grid-cols-12 items-center gap-4 py-6 transition hover:bg-neutral-50 sm:gap-6 sm:py-8">
+
+                    
+                    <div class="col-span-2 sm:col-span-1">
+                        <span class="text-2xl font-black leading-none tracking-tighter text-neutral-300 transition group-hover:text-black sm:text-3xl">
+                            01
+                        </span>
+                    </div>
+
+                    
+                    <div class="col-span-3 sm:col-span-1">
+                        <div class="aspect-square w-14 overflow-hidden bg-neutral-100 sm:w-16">
+                                                            <img src="./SMA Negeri 1 Example_files/Zg2cjKqDLRp8NPfBqdjwP5Z1JF4W2fpJkzeVPsbn.jpg" alt="Pramuka" class="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0">
+                                                    </div>
+                    </div>
+
+                    
+                    <div class="col-span-7 sm:col-span-6">
+                        <h3 class="mb-1 truncate text-base font-bold text-black transition group-hover:underline sm:text-lg lg:text-xl">
+                            Pramuka
+                        </h3>
+
+                        <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-wider text-neutral-500">
+                            <span>Akademik</span>
+
+                                                            <span class="h-1 w-1 rounded-full bg-neutral-300"></span>
+                                <span class="inline-flex items-center gap-1 normal-case tracking-normal">
+                                    <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+</svg>                                    Budi Santoso, S.Pd.
+                                </span>
+                                                    </div>
+                    </div>
+
+                    
+                    <div class="col-span-6 hidden sm:col-span-2 sm:block">
+                        <p class="mb-0.5 text-[10px] uppercase tracking-wider text-neutral-400">
+                            Anggota
+                        </p>
+                        <p class="text-lg font-bold text-black">
+                            120
+                        </p>
+                    </div>
+
+                    
+                    <div class="col-span-12 text-right sm:col-span-2">
+                        <svg class="ml-auto h-5 w-5 text-neutral-300 transition group-hover:translate-x-2 group-hover:text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </div>
+                </a>
+                            <a href="#" class="group grid grid-cols-12 items-center gap-4 py-6 transition hover:bg-neutral-50 sm:gap-6 sm:py-8">
+
+                    
+                    <div class="col-span-2 sm:col-span-1">
+                        <span class="text-2xl font-black leading-none tracking-tighter text-neutral-300 transition group-hover:text-black sm:text-3xl">
+                            02
+                        </span>
+                    </div>
+
+                    
+                    <div class="col-span-3 sm:col-span-1">
+                        <div class="aspect-square w-14 overflow-hidden bg-neutral-100 sm:w-16">
+                                                            <img src="./SMA Negeri 1 Example_files/vnPNRTchMsFJbD9gwIcqrd9TxC4o5kHuaUBIQj28.jpg" alt="PMR (Palang Merah Remaja)" class="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0">
+                                                    </div>
+                    </div>
+
+                    
+                    <div class="col-span-7 sm:col-span-6">
+                        <h3 class="mb-1 truncate text-base font-bold text-black transition group-hover:underline sm:text-lg lg:text-xl">
+                            PMR (Palang Merah Remaja)
+                        </h3>
+
+                        <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-wider text-neutral-500">
+                            <span>Akademik</span>
+
+                                                            <span class="h-1 w-1 rounded-full bg-neutral-300"></span>
+                                <span class="inline-flex items-center gap-1 normal-case tracking-normal">
+                                    <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+</svg>                                    Siti Aminah, S.Pd.
+                                </span>
+                                                    </div>
+                    </div>
+
+                    
+                    <div class="col-span-6 hidden sm:col-span-2 sm:block">
+                        <p class="mb-0.5 text-[10px] uppercase tracking-wider text-neutral-400">
+                            Anggota
+                        </p>
+                        <p class="text-lg font-bold text-black">
+                            45
+                        </p>
+                    </div>
+
+                    
+                    <div class="col-span-12 text-right sm:col-span-2">
+                        <svg class="ml-auto h-5 w-5 text-neutral-300 transition group-hover:translate-x-2 group-hover:text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </div>
+                </a>
+                            <a href="#" class="group grid grid-cols-12 items-center gap-4 py-6 transition hover:bg-neutral-50 sm:gap-6 sm:py-8">
+
+                    
+                    <div class="col-span-2 sm:col-span-1">
+                        <span class="text-2xl font-black leading-none tracking-tighter text-neutral-300 transition group-hover:text-black sm:text-3xl">
+                            03
+                        </span>
+                    </div>
+
+                    
+                    <div class="col-span-3 sm:col-span-1">
+                        <div class="aspect-square w-14 overflow-hidden bg-neutral-100 sm:w-16">
+                                                            <img src="./SMA Negeri 1 Example_files/qgiP41KsBmITsYjgdyXigmdOIvap9eMFyR4NuGhQ.jpg" alt="Basket" class="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0">
+                                                    </div>
+                    </div>
+
+                    
+                    <div class="col-span-7 sm:col-span-6">
+                        <h3 class="mb-1 truncate text-base font-bold text-black transition group-hover:underline sm:text-lg lg:text-xl">
+                            Basket
+                        </h3>
+
+                        <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-wider text-neutral-500">
+                            <span>Olahraga</span>
+
+                                                            <span class="h-1 w-1 rounded-full bg-neutral-300"></span>
+                                <span class="inline-flex items-center gap-1 normal-case tracking-normal">
+                                    <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+</svg>                                    Eko Prasetyo, S.Pd.
+                                </span>
+                                                    </div>
+                    </div>
+
+                    
+                    <div class="col-span-6 hidden sm:col-span-2 sm:block">
+                        <p class="mb-0.5 text-[10px] uppercase tracking-wider text-neutral-400">
+                            Anggota
+                        </p>
+                        <p class="text-lg font-bold text-black">
+                            30
+                        </p>
+                    </div>
+
+                    
+                    <div class="col-span-12 text-right sm:col-span-2">
+                        <svg class="ml-auto h-5 w-5 text-neutral-300 transition group-hover:translate-x-2 group-hover:text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </div>
+                </a>
+                            <a href="#" class="group grid grid-cols-12 items-center gap-4 py-6 transition hover:bg-neutral-50 sm:gap-6 sm:py-8">
+
+                    
+                    <div class="col-span-2 sm:col-span-1">
+                        <span class="text-2xl font-black leading-none tracking-tighter text-neutral-300 transition group-hover:text-black sm:text-3xl">
+                            04
+                        </span>
+                    </div>
+
+                    
+                    <div class="col-span-3 sm:col-span-1">
+                        <div class="aspect-square w-14 overflow-hidden bg-neutral-100 sm:w-16">
+                                                            <img src="./SMA Negeri 1 Example_files/DpOijD48gA3t5oH1JTpPPnFGsKdNKNpU1VZso9Az.jpg" alt="Futsal" class="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0">
+                                                    </div>
+                    </div>
+
+                    
+                    <div class="col-span-7 sm:col-span-6">
+                        <h3 class="mb-1 truncate text-base font-bold text-black transition group-hover:underline sm:text-lg lg:text-xl">
+                            Futsal
+                        </h3>
+
+                        <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-wider text-neutral-500">
+                            <span>Olahraga</span>
+
+                                                            <span class="h-1 w-1 rounded-full bg-neutral-300"></span>
+                                <span class="inline-flex items-center gap-1 normal-case tracking-normal">
+                                    <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+</svg>                                    Agus Priyanto, S.Pd.
+                                </span>
+                                                    </div>
+                    </div>
+
+                    
+                    <div class="col-span-6 hidden sm:col-span-2 sm:block">
+                        <p class="mb-0.5 text-[10px] uppercase tracking-wider text-neutral-400">
+                            Anggota
+                        </p>
+                        <p class="text-lg font-bold text-black">
+                            25
+                        </p>
+                    </div>
+
+                    
+                    <div class="col-span-12 text-right sm:col-span-2">
+                        <svg class="ml-auto h-5 w-5 text-neutral-300 transition group-hover:translate-x-2 group-hover:text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                    </div>
+                </a>
+                    </div>
+
+        
+        <div class="mt-12 text-center">
+            <a href="#" class="inline-flex items-center gap-2 border-b-2 border-black pb-1 text-sm font-semibold text-black transition hover:gap-3">
+                Lihat Semua Ekstrakurikuler
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+    </div>
+</section>
+    </div>
+
+    
+    <div data-reveal="fade-up" class="is-revealed">
+        <section class="border-b border-neutral-200 bg-neutral-50 py-20 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+
+        
+        <div class="mb-16 flex flex-col gap-6 border-b border-neutral-200 pb-8 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+                <span class="mb-3 block text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+                    05 / Galeri
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight text-black lg:text-5xl">
+                    Momen Berharga
+                </h2>
+                <p class="mt-4 max-w-xl text-sm leading-relaxed text-neutral-600">
+                    Dokumentasi berbagai kegiatan dan momen berharga di sekolah kami.
+                </p>
+            </div>
+            <a href="#" class="group inline-flex items-center gap-2 text-sm font-semibold text-black transition hover:gap-3">
+                Semua Galeri
+                <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+
+        
+        
+        <div class="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 lg:gap-6">
+
+                            
+                <a href="#" class="group relative aspect-square overflow-hidden bg-neutral-200 col-span-2 row-span-2">
+
+                    
+                                            <img src="./SMA Negeri 1 Example_files/SZAp4KUeKSE5JjtC0baiTse7k3ShKY3ALWdnJ367.jpg" alt="Upacara HUT RI ke-79" class="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-110 group-hover:grayscale-0">
+                    
+                    
+                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                        <div class="p-4 lg:p-5">
+                            
+                                                            <span class="mb-2 inline-block border border-white/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">
+                                    Kegiatan
+                                </span>
+                            
+                            
+                            <p class="line-clamp-2 text-sm font-semibold leading-tight text-white lg:text-base">
+                                Upacara HUT RI ke-79
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                                            <span class="absolute right-3 top-3 bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-black">
+                            Featured
+                        </span>
+                                    </a>
+                            
+                <a href="#" class="group relative aspect-square overflow-hidden bg-neutral-200 col-span-1 row-span-1">
+
+                    
+                                            <img src="./SMA Negeri 1 Example_files/ypeuoVekFn5ZhVuMd2nb8aqjZ43bHZL4jELMnSD4.jpg" alt="Pentas Seni Akhir Tahun" class="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-110 group-hover:grayscale-0">
+                    
+                    
+                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                        <div class="p-4 lg:p-5">
+                            
+                                                            <span class="mb-2 inline-block border border-white/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">
+                                    Kegiatan
+                                </span>
+                            
+                            
+                            <p class="line-clamp-2 text-sm font-semibold leading-tight text-white lg:text-base">
+                                Pentas Seni Akhir Tahun
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                                            <span class="absolute right-3 top-3 bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-black">
+                            Featured
+                        </span>
+                                    </a>
+                            
+                <a href="#" class="group relative aspect-square overflow-hidden bg-neutral-200 col-span-1 row-span-1">
+
+                    
+                                            <img src="./SMA Negeri 1 Example_files/Mw4VRoPcZpoW3gLihO9EN7aEqLYKGmuqVoIQYNAH.jpg" alt="Kunjungan Industri ke Telkom" class="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-110 group-hover:grayscale-0">
+                    
+                    
+                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                        <div class="p-4 lg:p-5">
+                            
+                                                            <span class="mb-2 inline-block border border-white/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">
+                                    Kegiatan
+                                </span>
+                            
+                            
+                            <p class="line-clamp-2 text-sm font-semibold leading-tight text-white lg:text-base">
+                                Kunjungan Industri ke Telkom
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                                            <span class="absolute right-3 top-3 bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-black">
+                            Featured
+                        </span>
+                                    </a>
+                            
+                <a href="#" class="group relative aspect-square overflow-hidden bg-neutral-200 col-span-1 row-span-1">
+
+                    
+                                            <img src="./SMA Negeri 1 Example_files/j9Uez5cFcqvxbwfFwEtgvkbRlkgJmHEZ4ja42mI1.jpg" alt="Class Meeting 2025" class="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-110 group-hover:grayscale-0">
+                    
+                    
+                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                        <div class="p-4 lg:p-5">
+                            
+                                                            <span class="mb-2 inline-block border border-white/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">
+                                    Kegiatan
+                                </span>
+                            
+                            
+                            <p class="line-clamp-2 text-sm font-semibold leading-tight text-white lg:text-base">
+                                Class Meeting 2025
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                                    </a>
+                            
+                <a href="#" class="group relative aspect-square overflow-hidden bg-neutral-200 col-span-1 row-span-1">
+
+                    
+                                            <img src="./SMA Negeri 1 Example_files/iwW2K3oEVwYiG98Rl1yVfsPJBfsV8qgxtAUeVjh5.jpg" alt="Lomba Cerdas Cermat" class="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-110 group-hover:grayscale-0">
+                    
+                    
+                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                        <div class="p-4 lg:p-5">
+                            
+                                                            <span class="mb-2 inline-block border border-white/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">
+                                    Prestasi
+                                </span>
+                            
+                            
+                            <p class="line-clamp-2 text-sm font-semibold leading-tight text-white lg:text-base">
+                                Lomba Cerdas Cermat
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                                    </a>
+                            
+                <a href="#" class="group relative aspect-square overflow-hidden bg-neutral-200 col-span-1 row-span-1">
+
+                    
+                                            <img src="./SMA Negeri 1 Example_files/0UnwSSL0QOeJXgD2G0W5D5PnguGal3Hn4UltI19y.jpg" alt="Wisuda Siswa Kelas XII" class="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-110 group-hover:grayscale-0">
+                    
+                    
+                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                        <div class="p-4 lg:p-5">
+                            
+                                                            <span class="mb-2 inline-block border border-white/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">
+                                    Kegiatan
+                                </span>
+                            
+                            
+                            <p class="line-clamp-2 text-sm font-semibold leading-tight text-white lg:text-base">
+                                Wisuda Siswa Kelas XII
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                                    </a>
+                    </div>
+
+        
+        <div class="mt-12 flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
+            <p class="text-sm text-neutral-500">
+                Lihat koleksi lengkap dokumentasi kegiatan kami
+            </p>
+            <a href="#" class="inline-flex items-center gap-2 border-b-2 border-black pb-1 text-sm font-semibold text-black transition hover:gap-3">
+                Buka Galeri Lengkap
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>            </a>
+        </div>
+    </div>
+</section>
+    </div>
+
+    
+    <div data-reveal="fade-up">
+            </div>
+
+    
+    <div data-reveal="fade-up">
+        <section class="bg-white py-20 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+
+        <div class="border border-neutral-200 bg-neutral-50">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+
+                
+                <div class="flex flex-col justify-center p-8 lg:p-16">
+
+                    
+                    <span class="mb-4 block text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+                        06 / Hubungi Kami
+                    </span>
+
+                    
+                    <h2 class="mb-6 text-3xl font-bold leading-tight tracking-tight text-black lg:text-5xl">
+                        Ada Pertanyaan?
+                    </h2>
+
+                    
+                    <p class="mb-8 max-w-md text-base leading-relaxed text-neutral-600">
+                        Tim kami siap membantu Anda. Silakan hubungi kami melalui telepon, email, atau kunjungi langsung kantor kami.
+                    </p>
+
+                    
+                    <div>
+                        <a href="#kontak" class="group inline-flex items-center gap-2 bg-black px-8 py-4 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-neutral-800">
+                            Kirim Pesan
+                            <svg class="h-4 w-4 transition group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+</svg>                        </a>
+                    </div>
+
+                    
+                    <p class="mt-6 text-xs text-neutral-500">
+                        Kami akan membalas pesan Anda dalam 1×24 jam kerja.
+                    </p>
+                </div>
+
+                
+                <div class="border-t border-neutral-200 p-8 lg:border-l lg:border-t-0 lg:p-16">
+
+                    <div class="space-y-6">
+
+                        
+                                                    <div class="flex items-start gap-4">
+                                <span class="grid h-12 w-12 flex-shrink-0 place-items-center border border-neutral-300 bg-white text-black transition hover:border-black hover:bg-black hover:text-white">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"></path>
+</svg>                                </span>
+                                <div class="min-w-0">
+                                    <p class="mb-1 text-xs font-medium uppercase tracking-wider text-neutral-500">
+                                        Telepon
+                                    </p>
+                                    <a href="tel:(0293) 712345" class="break-words text-base font-semibold text-black transition hover:text-neutral-600">
+                                        (0293) 712345
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        
+                                                    <div class="flex items-start gap-4">
+                                <span class="grid h-12 w-12 flex-shrink-0 place-items-center border border-neutral-300 bg-white text-black transition hover:border-black hover:bg-black hover:text-white">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path>
+</svg>                                </span>
+                                <div class="min-w-0">
+                                    <p class="mb-1 text-xs font-medium uppercase tracking-wider text-neutral-500">
+                                        Email
+                                    </p>
+                                    <a href="mailto:info@sman1pringsurat.sch.id" class="break-all text-base font-semibold text-black transition hover:text-neutral-600">
+                                        info@sman1pringsurat.sch.id
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        
+                                                    <div class="flex items-start gap-4">
+                                <span class="grid h-12 w-12 flex-shrink-0 place-items-center border border-neutral-300 bg-white text-black transition hover:border-black hover:bg-black hover:text-white">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"></path>
+</svg>                                </span>
+                                <div class="min-w-0">
+                                    <p class="mb-1 text-xs font-medium uppercase tracking-wider text-neutral-500">
+                                        Alamat
+                                    </p>
+                                    <p class="text-base font-semibold leading-relaxed text-black">
+                                        Jl. Raya Pringsurat No. 123, Kec. Pringsurat, Kab. Temanggung, Jawa Tengah 56272
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        
+                        <div class="border-t border-neutral-200 pt-6">
+                            <div class="flex items-start gap-4">
+                                <span class="grid h-12 w-12 flex-shrink-0 place-items-center border border-neutral-300 bg-white text-black">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+</svg>                                </span>
+                                <div class="min-w-0">
+                                    <p class="mb-1 text-xs font-medium uppercase tracking-wider text-neutral-500">
+                                        Jam Operasional
+                                    </p>
+                                    <div class="space-y-1 text-sm text-black">
+                                        <p class="flex justify-between gap-4">
+                                            <span class="font-medium">Senin - Jumat</span>
+                                            <span class="text-neutral-600">07:00 - 16:00</span>
+                                        </p>
+                                        <p class="flex justify-between gap-4">
+                                            <span class="font-medium">Sabtu</span>
+                                            <span class="text-neutral-600">07:00 - 12:00</span>
+                                        </p>
+                                        <p class="flex justify-between gap-4">
+                                            <span class="font-medium">Minggu &amp; Libur</span>
+                                            <span class="text-neutral-400">Tutup</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="mt-8 border-t border-neutral-200 pt-6">
+                        <p class="mb-4 text-xs font-medium uppercase tracking-wider text-neutral-500">
+                            Ikuti Kami
+                        </p>
+
+                        <div class="flex flex-wrap gap-3">
+                            
+                                                                                                <a href="https://facebook.com/sman1pringsurat" target="_blank" rel="noopener noreferrer" title="Facebook" class="grid h-10 w-10 place-items-center border border-neutral-300 bg-white text-neutral-700 transition hover:border-black hover:bg-black hover:text-white">
+                                        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                                        </svg>
+                                    </a>
+                                                                                                                                <a href="https://instagram.com/sman1pringsurat" target="_blank" rel="noopener noreferrer" title="Instagram" class="grid h-10 w-10 place-items-center border border-neutral-300 bg-white text-neutral-700 transition hover:border-black hover:bg-black hover:text-white">
+                                        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path>
+                                        </svg>
+                                    </a>
+                                                                                                                                <a href="https://youtube.com/@sman1pringsurat" target="_blank" rel="noopener noreferrer" title="YouTube" class="grid h-10 w-10 place-items-center border border-neutral-300 bg-white text-neutral-700 transition hover:border-black hover:bg-black hover:text-white">
+                                        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                                        </svg>
+                                    </a>
+                                                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    </div>
+
+    </main>
+
+    
+    <footer class="border-t border-neutral-200 bg-black text-neutral-300">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-16 sm:px-8 md:grid-cols-2 lg:grid-cols-4 lg:px-12 lg:py-20">
+
+        
+        <div class="lg:col-span-2">
+            <div class="mb-5 flex items-center gap-3">
+                                    <img src="./SMA Negeri 1 Example_files/so1aPq8OTpvo7xqRn5uQpiZSfuQZrBLF8eIAcW4j.png" alt="SMA Negeri 1 Example" class="h-10 w-auto brightness-0 invert">
+                
+                <div>
+                    <p class="text-base font-bold leading-tight text-white">
+                        SMA Negeri 1 Example
+                    </p>
+                    <p class="text-xs uppercase tracking-wider text-neutral-500">
+                        Unggul dalam Prestasi, Mulia dalam Akhlak
+                    </p>
+                </div>
+            </div>
+
+            <p class="max-w-md text-sm leading-relaxed text-neutral-400">
+                SMA Negeri 1 Example adalah sekolah menengah atas unggulan yang berdiri sejak tahun 1985. Berfokus pada pembentukan karakter, inklusivitas, dan prestasi akademik, sekolah ini terus bertransformasi menuju era digital untuk mencetak generasi muda yang inovatif, berdaya saing global, serta berintegritas tinggi.
+            </p>
+
+            
+            <div class="mt-6 flex gap-3">
+                                                            <a href="https://facebook.com/sman1pringsurat" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="grid h-10 w-10 place-items-center border border-neutral-800 bg-neutral-900 text-neutral-400 transition hover:border-white hover:bg-white hover:text-black">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                            </svg>
+                        </a>
+                                                                                <a href="https://instagram.com/sman1pringsurat" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="grid h-10 w-10 place-items-center border border-neutral-800 bg-neutral-900 text-neutral-400 transition hover:border-white hover:bg-white hover:text-black">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path>
+                            </svg>
+                        </a>
+                                                                                <a href="https://youtube.com/@sman1pringsurat" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="grid h-10 w-10 place-items-center border border-neutral-800 bg-neutral-900 text-neutral-400 transition hover:border-white hover:bg-white hover:text-black">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                            </svg>
+                        </a>
+                                                </div>
+        </div>
+
+        
+        <div>
+            <h4 class="mb-5 text-xs font-bold uppercase tracking-widest text-white">
+                Tautan Cepat
+            </h4>
+            <ul class="space-y-3 text-sm">
+                                                            <li>
+                            <a href="#" class="text-neutral-400 transition hover:text-white">
+                                Berita
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="#prestasi" class="text-neutral-400 transition hover:text-white">
+                                Prestasi
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="#" class="text-neutral-400 transition hover:text-white">
+                                Galeri
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="#" class="text-neutral-400 transition hover:text-white">
+                                Download
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="#" class="text-neutral-400 transition hover:text-white">
+                                PPDB
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="#kontak" class="text-neutral-400 transition hover:text-white">
+                                Kontak
+                            </a>
+                        </li>
+                                                </ul>
+            <div class="mt-6 flex flex-wrap gap-4 text-xs text-neutral-500">
+                <a href="#" class="transition hover:text-white">Kebijakan Privasi</a>
+                <a href="#" class="transition hover:text-white">Syarat &amp; Ketentuan</a>
+            </div>
+        </div>
+
+        
+        <div>
+            <h4 class="mb-5 text-xs font-bold uppercase tracking-widest text-white">
+                Kontak
+            </h4>
+            <ul class="space-y-4 text-sm text-neutral-400">
+                                    <li class="flex gap-3">
+                        <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"></path>
+</svg>                        <span>Jl. Raya Pringsurat No. 123, Kec. Pringsurat, Kab. Temanggung, Jawa Tengah 56272</span>
+                    </li>
+                
+                                    <li class="flex gap-3">
+                        <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"></path>
+</svg>                        <a href="tel:(0293) 712345" class="transition hover:text-white">
+                            (0293) 712345
+                        </a>
+                    </li>
+                
+                                    <li class="flex gap-3">
+                        <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path>
+</svg>                        <a href="mailto:info@sman1pringsurat.sch.id" class="break-all transition hover:text-white">
+                            info@sman1pringsurat.sch.id
+                        </a>
+                    </li>
+                
+                            </ul>
+        </div>
+    </div>
+
+    
+    <div class="border-t border-neutral-800">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 text-xs sm:flex-row sm:px-8 lg:px-12">
+
+            
+            <p class="text-neutral-500">
+                © 2026
+                <span class="text-neutral-300">SMA Negeri 1 Example</span>.
+                All rights reserved.
+            </p>
+
+            
+            <p class="flex items-center gap-1.5 text-neutral-500">
+                <span>Developed by</span>
+
+                <a href="https://wa.me/6285600666265?text=Halo%20s7dreamstudios%21%20Saya%20tertarik%20untuk%20membuat%20website%20sekolah%2Finstansi.%20Bisa%20dibantu%20informasi%20lebih%20lanjut%3F" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 font-semibold text-white transition hover:text-neutral-300">
+                    s7dreamstudios
+                    <svg class="h-3 w-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+                    </svg>
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+    
+    
+    <script src="./SMA Negeri 1 Example_files/swiper-bundle.min.js.download"></script>
+
+    
+        <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const el = document.querySelector('.hero-strada-swiper');
+        if (!el || typeof Swiper === 'undefined') return;
+
+        const total = 3;
+        const counterEl = document.querySelector('.hero-strada-current');
+
+        new Swiper(el, {
+            loop: total > 1,
+            speed: 1100,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            autoplay: total > 1 ? {
+                delay: 6500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            } : false,
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+            navigation: {
+                nextEl: '.hero-strada .swiper-button-next',
+                prevEl: '.hero-strada .swiper-button-prev',
+            },
+            pagination: {
+                el: '.hero-strada .swiper-pagination',
+                type: 'fraction',
+            },
+            on: {
+                slideChange(sw) {
+                    if (counterEl) {
+                        const n = sw.realIndex + 1;
+                        counterEl.textContent = String(n).padStart(2, '0');
+                    }
+                }
+            }
+        });
+    });
+    </script>
+    <script>
+    (function () {
+        'use strict';
+
+        function initScrollReveal() {
+            const elements = document.querySelectorAll('[data-reveal]');
+            if (!elements.length) return;
+
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReduced) {
+                elements.forEach(el => el.classList.add('is-revealed'));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -60px 0px',
+            });
+
+            elements.forEach(el => observer.observe(el));
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initScrollReveal);
+        } else {
+            initScrollReveal();
+        }
+    })();
+</script>
+
+</body></html>
